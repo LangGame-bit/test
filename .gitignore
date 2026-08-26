@@ -1,28 +1,122 @@
-# 操作系统生成文件
-.DS_Store
+# ========== 操作系统生成文件 ==========
+# Windows
 Thumbs.db
-desktop.ini
 ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# IDE / 编辑器
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+
+# ========== IDE / 编辑器 ==========
+# VS Code
 .vscode/
+!.vscode/extensions.json
+
+# JetBrains (IntelliJ, PyCharm, WebStorm 等)
 .idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim / Emacs
 *.swp
 *.swo
 *~
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# 通用编辑器临时文件
 *.tmp
+*.temp
+*.bak
+*.orig
 
-# 日志文件
+# ========== 日志文件 ==========
 *.log
+logs/
+log/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# 环境变量与密钥
+# ========== 环境变量与密钥 ==========
 .env
 .env.local
+.env.*.local
 *.secret
+*.pem
+*.key
+*.crt
+*.p12
+credentials.json
+service-account*.json
 
-# 依赖与构建产物（按需保留）
+# ========== 依赖与构建产物 ==========
+# Node.js
 node_modules/
-dist/
-build/
+.pnp
+.pnp.js
+
+# Python
 __pycache__/
 *.pyc
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# Java / Maven / Gradle
+target/
+.gradle/
+build/
+out/
+
+# C/C++
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# 通用构建
+dist/
+build/
+out/
+coverage/
+.coverage
+*.tsbuildinfo
+
+# ========== 版本控制 ==========
+.hg/
+.svn/
+
+# ========== 其他 ==========
+# 压缩包
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# 数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# 临时文件夹
+tmp/
+temp/
+.cache/
